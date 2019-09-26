@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.041" tests="7" failures="3">
+  <testsuite name="Root Suite" timestamp="2019-09-02T07:59:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="test" timestamp="2019-09-02T07:59:11" tests="0" file="/home/enriqueaguilar/Desktop/shopper-position/test/unit/PositionServiceTest.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="healthcheck" timestamp="2019-09-02T07:59:11" tests="1" file="/home/enriqueaguilar/Desktop/shopper-position/test/unit/PositionServiceTest.js" failures="0" time="0.02">
+    <testcase name="test healthcheck success" time="0.02" classname="success">
+    </testcase>
+  </testsuite>
+  <testsuite name="error handler" timestamp="2019-09-02T07:59:11" tests="3" file="/home/enriqueaguilar/Desktop/shopper-position/test/unit/PositionServiceTest.js" failures="0" time="0.016">
+    <testcase name="test error handler 404" time="0.011" classname="404">
+    </testcase>
+    <testcase name="test error handler 400 empty body" time="0.003" classname="400 empty body">
+    </testcase>
+    <testcase name="test error handler 400 body error" time="0.002" classname="400 body error">
+    </testcase>
+  </testsuite>
+  <testsuite name="endpoint" timestamp="2019-09-02T07:59:11" tests="3" file="/home/enriqueaguilar/Desktop/shopper-position/test/unit/PositionServiceTest.js" failures="3" time="0.005">
+    <testcase name="test endpoint 200" time="0.002" classname="200">
+      <failure message="Bad Request" type="Error"><![CDATA[Error: Bad Request
+    at Test.Request.callback (node_modules/superagent/lib/node/index.js:626:17)
+    at IncomingMessage.<anonymous> (node_modules/superagent/lib/node/index.js:795:18)
+    at endReadableNT (_stream_readable.js:1129:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)]]></failure>
+    </testcase>
+    <testcase name="test endpoint cache" time="0.002" classname="cache">
+      <failure message="Bad Request" type="Error"><![CDATA[Error: Bad Request
+    at Test.Request.callback (node_modules/superagent/lib/node/index.js:626:17)
+    at IncomingMessage.<anonymous> (node_modules/superagent/lib/node/index.js:795:18)
+    at endReadableNT (_stream_readable.js:1129:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)]]></failure>
+    </testcase>
+    <testcase name="test endpoint async save" time="0.001" classname="async save">
+      <failure message="Bad Request" type="Error"><![CDATA[Error: Bad Request
+    at Test.Request.callback (node_modules/superagent/lib/node/index.js:626:17)
+    at IncomingMessage.<anonymous> (node_modules/superagent/lib/node/index.js:795:18)
+    at endReadableNT (_stream_readable.js:1129:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

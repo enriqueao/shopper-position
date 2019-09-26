@@ -1,0 +1,5 @@
+Requerimientos:
+ - El microservicio debe ser capaz de soportar alta concurrencia, se recibirán requests cada segundo por cada shopper.
+ - El endpoint a desarrollar debe ser en la siguiente URL: /api/shoppers/position/:shopperId, con shopperId de tipo number, con el body { lat, lng }, ambos de tipo number.
+ - Se debe contar con manejo de errores, en caso de falta de algún parámetro o tipo incorrecto y retornar el status del error.
+ - Debe haber un health-check en la siguiente URL:  /api/shoppers/health-check.
